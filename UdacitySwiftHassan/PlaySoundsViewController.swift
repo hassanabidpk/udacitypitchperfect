@@ -14,7 +14,6 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayer: AVAudioPlayer!
     var receivedAudio:RecordedAudio!
     var audioEngine:AVAudioEngine!
-    let pitchEffect: AVAudioUnitTimePitch = AVAudioUnitTimePitch()
     var audioFile:AVAudioFile!
     
     override func viewDidLoad() {
@@ -68,12 +67,11 @@ class PlaySoundsViewController: UIViewController {
    
         resetAudio()
         
-        
         var audioPlayerNode = AVAudioPlayerNode()
-        audioEngine.attachNode(audioPlayerNode)
-        
+        var pitchEffect = AVAudioUnitTimePitch()
         pitchEffect.pitch = pitch
         audioEngine.attachNode(pitchEffect)
+        audioEngine.attachNode(audioPlayerNode)
         
         audioEngine.connect(audioPlayerNode, to: pitchEffect, format: nil)
         audioEngine.connect(pitchEffect, to: audioEngine.outputNode, format: nil)
