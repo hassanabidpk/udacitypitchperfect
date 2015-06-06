@@ -6,9 +6,10 @@ See course [here](https://www.udacity.com/course/intro-to-ios-app-development-wi
 
 ### Screenshots
 
-![Home/Record screen](images/screenshot_1.png "Home screen of the app")
+<img src="images/screenshot_1.png" width="350">
 <br>
-![Play sound screen](images/screenshot_2.png "Play sound screen of the app")
+
+<img src="images/screenshot_2.png" width="350">
 
 ### Course Certificate 
 
