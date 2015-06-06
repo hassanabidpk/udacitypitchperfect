@@ -7,8 +7,8 @@ See course [here](https://www.udacity.com/course/intro-to-ios-app-development-wi
 ### Screenshots
 
 <img src="images/screenshot_1.png" width="350">
-<br>
-
+</br>
+</br>
 <img src="images/screenshot_2.png" width="350">
 
 ### Course Certificate 
